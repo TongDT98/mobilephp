@@ -20,8 +20,8 @@ if (isset($_GET['controller']))
   
 } 
 else {
-  $controller = 'nhasanxuat';
-  $action = 'index';
+  $controller = 'pages';
+  $action = 'home';
 }
 require_once('routes.php');
 ?>
