@@ -19,6 +19,7 @@
                                         </thead>
                                         <tbody>
                                            <?php
+                                           
                                             foreach ($items as $item) {   ?>
                                             <tr class="odd gradeX">
                                                 <td><?php echo $item->Id ?></td>

@@ -1,7 +1,7 @@
 
 <?php
-require_once('/controllers/base.php');
-require_once('../models/model_nhasanxuat.php');
+require_once('controllers/base.php');
+require_once('models/model_nhasanxuat.php');
 
 class NhaSanXuatController extends BaseController
 {
@@ -22,5 +22,6 @@ class NhaSanXuatController extends BaseController
     $data = array();
     $this->render('add',$data,true);
   }
+}
  
 ?>

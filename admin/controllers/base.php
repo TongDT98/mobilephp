@@ -5,7 +5,7 @@ class BaseController
   
   function render($file, $data = array())
   { 
-    $view_file = '../views/' . $this->folder . '/' . $file . '.php';
+    $view_file = 'views/' . $this->folder . '/' . $file . '.php';
     if (is_file($view_file)) {
       extract($data);
      
