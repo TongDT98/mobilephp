@@ -12,7 +12,7 @@ class BaseController
       ob_start();
       require_once($view_file);
       $content = ob_get_clean();        
-        require_once('../layout.php');
+        require_once('layout.php');
      
   }
 }

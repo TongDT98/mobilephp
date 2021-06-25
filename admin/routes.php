@@ -5,5 +5,5 @@ $controllers = array(
 include_once('controllers/' .$controller . '.php');
 $con = $controller . 'Controller';
 $controller = new $con;
-$controller ->$action;
+$controller ->$action();
 ?>
