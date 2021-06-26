@@ -7,7 +7,11 @@ if (session_status() == PHP_SESSION_NONE) {
 require_once('../system/connection.php');
 // if (!isset($_SESSION['LoginAdmin']) && $_GET['action']!= 'login') {
 // 	header("Location: login.php");
+
 // }
+if (!isset($_SESSION['LoginAdmin']) && $_GET['action']!= 'login') {
+	header("Location: login.php");
+}
 if (isset($_GET['controller'])) 
 {
   $controller = $_GET['controller'];

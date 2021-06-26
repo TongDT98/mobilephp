@@ -9,7 +9,7 @@
  nav.row {height: 40px; line-height: 40px }
  footer.row { height: 60px;}
  div.noidung { min-height: 500px}
- div.noidung >main  { } 
+ div.noidung main  { } 
  </style>
  <body>
 
