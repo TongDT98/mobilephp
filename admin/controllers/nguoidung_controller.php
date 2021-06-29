@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require_once('controllers/base.php');
+require_once('controllers/base_controller.php');
 require_once('models/model_Nguoidung.php');
 
 class NguoidungController extends BaseController

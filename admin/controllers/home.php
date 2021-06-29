@@ -1,4 +1,4 @@
 <?php
   session_start();
-  require_once("../system/config.php");
+  require_once("../appconfig/config.php");
 ?>

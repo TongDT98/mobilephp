@@ -31,7 +31,7 @@ class Nguoidung
     return $list;
   }
   static function login($tenDangNhap , $matKhau){
-     $db = DB::getInstance();
+    $db = DB::getInstance();
     $req = $db->prepare('SELECT * FROM Nguoidung WHERE TenDangNhap = :TenDangNhap and MatKhau= :MatKhau ');
     $req->execute(array('TenDangNhap' => $tenDangNhap,'MatKhau' => $matKhau));
 
