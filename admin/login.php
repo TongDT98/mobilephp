@@ -30,12 +30,22 @@
 </head>
 
 <body>
+<<<<<<< .mine
 
+=======
+
+>>>>>>> .theirs
     <div class="limiter">
         <div class="container-login100" style="background-image: url('assets/login/images/bg-01.jpg');">
             <div class="wrap-login100 p-t-30 p-b-50">
                 <span class="login100-form-title p-b-41">
                     Login to Your Account
+                </span>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('assets/login/images/bg-01.jpg');">
+            <div class="wrap-login100 p-t-30 p-b-50">
+                <span class="login100-form-title p-b-41">
+                    long
                 </span>
                 <span style="color: red;">
                     <?php  if (isset($login_check)) { ?>
