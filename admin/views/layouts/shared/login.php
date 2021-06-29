@@ -1,22 +1,22 @@
-<?php 
-                            include '../services/adminService.php';
-                         ?>
-<?php 
-                            $service = new adminService();
-                            if ($_SERVER['REQUEST_METHOD']=== 'POST') {
-                                $username = $_POST["username"];
-                                $pass = $_POST["password"];
+<?php
+include '../services/adminService.php';
+?>
+<?php
+$service = new adminService();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST["username"];
+    $pass = $_POST["password"];
 
-                                $login_check = $service->loginAdmin($username, $pass);
-                            }
-                        ?>
+    $login_check = $service->loginAdmin($username, $pass);
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en" class="default-style">
 
 <c:set var="context" value="${pageContext.request.contextPath}" />
 
-<!-- Mirrored from uxpowered.com/phpfinal/adminhtml-demo/pages_authentication_login-v2.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Oct 2018 10:59:25 GMT -->
+<!-- Mirrored from uxpowered.com/mobilephp/adminhtml-demo/pages_authentication_login-v2.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Oct 2018 10:59:25 GMT -->
 
 <head>
     <title>Login</title>
@@ -26,49 +26,49 @@
     <meta name="description" content="">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/phpfinal/admin/shared/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/mobilephp/admin/shared/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900"
         rel="stylesheet">
 
     <!-- Icon fonts -->
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/fonts/fontawesome.css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/fonts/ionicons.css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/fonts/linearicons.css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/fonts/open-iconic.css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/fonts/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/fonts/fontawesome.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/fonts/linearicons.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/fonts/open-iconic.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/fonts/pe-icon-7-stroke.css">
 
     <!-- Core stylesheets -->
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/rtl/bootstrap.css"
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/rtl/bootstrap.css"
         class="theme-settings-bootstrap-css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/rtl/theme-corporate.css"
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/rtl/theme-corporate.css"
         class="theme-settings-theme-css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/rtl/uikit.css">
-    <link rel="stylesheet" href="/phpfinal/admin/shared/assets/css/demo.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/rtl/uikit.css">
+    <link rel="stylesheet" href="/mobilephp/admin/shared/assets/css/demo.css">
 
-    <script src="/phpfinal/admin/assets/vendor/js/material-ripple.js"></script>
-    <script src="/phpfinal/admin/assets/vendor/js/layout-helpers.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/material-ripple.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/layout-helpers.js"></script>
 
     <!-- Theme settings -->
     <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
-    <script src="/phpfinal/admin/assets/vendor/js/theme-settings.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/theme-settings.js"></script>
     <script>
     window.themeSettings = new ThemeSettings({
-        cssPath: '/phpfinal/admin/assets/vendor/css/rtl/',
-        themesPath: '/phpfinal/admin/assets/vendor/css/rtl/'
+        cssPath: '/mobilephp/admin/assets/vendor/css/rtl/',
+        themesPath: '/mobilephp/admin/assets/vendor/css/rtl/'
     });
     </script>
 
     <!-- Core scripts -->
-    <script src="/phpfinal/admin/assets/vendor/js/pace.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/pace.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Libs -->
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
     <!-- Page -->
-    <link rel="stylesheet" href="/phpfinal/admin/assets/vendor/css/pages/authentication.css">
+    <link rel="stylesheet" href="/mobilephp/admin/assets/vendor/css/pages/authentication.css">
 </head>
 
 <body>
@@ -79,7 +79,7 @@
     <!-- Content -->
 
     <div class="authentication-wrapper authentication-2 ui-bg-cover ui-bg-overlay-container px-4"
-        style="background-image: url('/phpfinal/admin/assets/img/bg/1.jpg');">
+        style="background-image: url('/mobilephp/admin/assets/img/bg/1.jpg');">
         <div class="ui-bg-overlay bg-dark opacity-25"></div>
 
         <div class="authentication-inner py-5">
@@ -124,7 +124,7 @@
 
                     <h5 class="text-center text-muted font-weight-normal mb-4">Login to Your Account</h5>
                     <span style="color: red;">
-                        <?php  if (isset($login_check)) { ?>
+                        <?php if (isset($login_check)) { ?>
                         <div class='alert alert-danger alert-dismissible fade show'>
                             <button type='button' class='close' data-dismiss='alert'>×</button>
                             <?php echo $login_check; ?>
@@ -171,15 +171,15 @@
     <!-- / Content -->
 
     <!-- Core scripts -->
-    <script src="/phpfinal/admin/assets/vendor/libs/popper/popper.js"></script>
-    <script src="/phpfinal/admin/assets/vendor/js/bootstrap.js"></script>
-    <script src="/phpfinal/admin/assets/vendor/js/sidenav.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/bootstrap.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/js/sidenav.js"></script>
 
     <!-- Libs -->
-    <script src="/phpfinal/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/mobilephp/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <!-- Demo -->
-    <script src="/phpfinal/admin/shared/assets/js/demo.js"></script>
+    <script src="/mobilephp/admin/shared/assets/js/demo.js"></script>
 
 </body>
 
