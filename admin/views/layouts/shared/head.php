@@ -3,7 +3,7 @@
 
 <head>
     <c:set var="context" value="${pageContext.request.contextPath}" />
-    <title>Admin - Appwork</title>
+    <title>Eco-mobile</title>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
@@ -83,6 +83,31 @@
         content: "*";
         color: red;
     }
+
+    .theme-settings-open-btn {
+        display: none !important;
+    }
+
+    /*css scroll*/
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #F2F3F3;
+        border-radius: 2.5px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 0px;
+        background-color: #0888b1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 5px;
+        border-radius: 2.5px;
+        background-color: #0888b1;
+    }
+
+    /*end*/
     </style>
     <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0" type="text/javascript"></script>
 

@@ -36,7 +36,7 @@
                                         Quản lý sản phẩm
                                     </li>
                                     <li>
-                                        <a class="sidenav-item-link" href="index.html">
+                                        <a class="sidenav-item-link" href="index.php?controller=sanpham&action=index">
                                             <span class="nav-text">Sản phẩm</span>
                                         </a>
                                     </li>
