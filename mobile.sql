@@ -131,7 +131,7 @@ INSERT INTO `nhasanxuat` (`Id`, `TenNhaSanXuat`, `DienThoai`, `Email`, `DiaChi`,
 --
 
 CREATE TABLE `sanpham` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `MaSanPham` int(15) NOT NULL,
   `TenSanPham` varchar(250) DEFAULT NULL,
   `Gia` double(12,0) NOT NULL,

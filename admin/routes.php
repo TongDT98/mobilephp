@@ -7,7 +7,7 @@ $controllers = array(
   'manhinh' => ['index','showCat','add','add_post','delete','edit','edit_post'], 
   'nhasanxuat' => ['index','showCat','add','add_post','delete','edit','edit_post'], 
   'hoadon' => ['index','showCat','add','add_post','delete','edit','edit_post'], 
-  'sanpham' => ['index','showCat','add','add_post','delete','edit','edit_post'], 
+  'sanpham' => ['index','showCat','add','do_add','delete','edit','edit_post'], 
   'nguoidung' => ['index','showCat','add','add_post','delete','edit','edit_post', 'login','logout'], 
   'hoadonchitiet' => ['index'], 
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.
@@ -26,4 +26,3 @@ include_once('controllers/' . $controller . '_controller.php');
 $klass = str_replace('_', '', ucwords($controller, '_')) . 'Controller';
 $controller = new $klass;
 $controller->$action();
-?>

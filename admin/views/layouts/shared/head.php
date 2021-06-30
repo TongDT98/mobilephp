@@ -107,6 +107,16 @@
         background-color: #0888b1;
     }
 
+    .layout-wrapper.layout-2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .paginate_button.page-item.previous .page-link,
+    .paginate_button.page-item.next .page-link {
+        height: 25px !important;
+    }
+
     /*end*/
     </style>
     <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0" type="text/javascript"></script>

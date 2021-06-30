@@ -25,7 +25,10 @@ class SanPham
         return $list;
     }
 
-    static function add($data)
+    static function add()
+    {
+    }
+    static function do_add($data)
     {
         try {
             $db = DB::getInstance();

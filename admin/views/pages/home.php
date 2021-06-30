@@ -1,9 +1,6 @@
 <div class="container-fluid flex-grow-1 container-p-y">
-    <h4 class="font-weight-bold py-3 mb-4">
-        Dashboard
-        <div class="text-muted text-tiny mt-1">
-            <small class="font-weight-normal"></small>
-        </div>
+    <h4 class="d-flex justify-content-between align-items-center w-100 font-weight-bold p-0 mt-3">
+        <div style="font-size: 30px;">Trang chủ</div>
     </h4>
 
     <!-- Counters -->
@@ -15,8 +12,8 @@
                     <div class="d-flex align-items-center">
                         <div class="lnr lnr-cart display-4 text-success"></div>
                         <div class="ml-3">
-                            <div class="text-muted small">Monthly sales</div>
-                            <div class="text-large">2362</div>
+                            <div class="text-muted small">Bán hàng tháng</div>
+                            <div class="text-large">1000+</div>
                         </div>
                     </div>
                 </div>
@@ -30,8 +27,8 @@
                     <div class="d-flex align-items-center">
                         <div class="lnr lnr-earth display-4 text-info"></div>
                         <div class="ml-3">
-                            <div class="text-muted small">Monthly visits</div>
-                            <div class="text-large">687,123</div>
+                            <div class="text-muted small">Khách thăm quan</div>
+                            <div class="text-large">1000+</div>
                         </div>
                     </div>
                 </div>
@@ -45,8 +42,8 @@
                     <div class="d-flex align-items-center">
                         <div class="lnr lnr-gift display-4 text-danger"></div>
                         <div class="ml-3">
-                            <div class="text-muted small">Products</div>
-                            <div class="text-large">985</div>
+                            <div class="text-muted small">Sản phẩm</div>
+                            <div class="text-large">1000+</div>
                         </div>
                     </div>
                 </div>
@@ -60,8 +57,8 @@
                     <div class="d-flex align-items-center">
                         <div class="lnr lnr-users display-4 text-warning"></div>
                         <div class="ml-3">
-                            <div class="text-muted small">Users</div>
-                            <div class="text-large">105,652</div>
+                            <div class="text-muted small">Người dùng</div>
+                            <div class="text-large">1000+</div>
                         </div>
                     </div>
                 </div>

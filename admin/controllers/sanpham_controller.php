@@ -9,7 +9,7 @@ class SanPhamController extends BaseController
 {
     function __construct()
     {
-        $this->folder = 'SanPham';
+        $this->folder = 'sanpham';
     }
 
     public function index()
@@ -17,5 +17,24 @@ class SanPhamController extends BaseController
         $items = SanPham::all();
         $data = array('items' => $items);
         $this->render('index', $data);
+    }
+
+    public function add()
+    {
+        $this->render('add');
+    }
+
+    public function do_add()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $item = new SanPham(0, $_POST["MaSanPham"], $_POST["TenSanPham"]);
+            SanPham::do_add($item);
+            header('Content-Type: application/json');
+            echo json_encode('Thành công');
+            exit;
+        }
+        header('Content-Type: application/json');
+        echo json_encode('Thất bại');
+        exit;
     }
 }
