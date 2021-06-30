@@ -25,10 +25,7 @@ class SanPham
         return $list;
     }
 
-    static function add()
-    {
-    }
-    static function add_post($data)
+    static function add($data)
     {
         try {
             $db = DB::getInstance();
@@ -44,7 +41,7 @@ class SanPham
     {
         try {
             $db = DB::getInstance();
-            $sql = 'UPDATE Nguoidung SET TenDayDu="' . $data->TenDayDu . '", TenDangNhap="' . $data->TenDangNhap . '",  Email="' . $data->Email . '",  VaiTro="' . $data->VaiTro . '" WHERE Id=' . $data->Id;
+            $sql = 'UPDATE SanPham SET MaSanPham="' . $data->MaSanPham . '", TenSanPham="' . $data->TenSanPham . '" WHERE Id=' . $data->Id;
             $db->exec($sql);
             return true;
         } catch (PDOException $e) {
@@ -56,11 +53,23 @@ class SanPham
     {
         try {
             $db = DB::getInstance();
-            $sql = "DELETE FROM Nguoidung WHERE Id = '$id'";
+            $sql = "DELETE FROM SanPham WHERE Id = '$id'";
             $db->exec($sql);
             return true;
         } catch (PDOException $e) {
             return false;
         }
+    }
+
+    static function find($id)
+    {
+        $db = DB::getInstance();
+        $req = $db->prepare('SELECT * FROM SanPham WHERE Id = :id');
+        $req->execute(array('id' => $id));
+        $item = $req->fetch();
+        if (isset($item['Id'])) {
+            return new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham']);
+        }
+        return null;
     }
 }

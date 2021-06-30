@@ -31,7 +31,7 @@
                                      href="index.php?controller=sanpham&action=edit&Id=<?php echo $item->Id ?>">Edit</a>
 
                                  <a onclick="return confirm('Bạn có muốn xóa?')"
-                                     href="index.php?controller=sanpham&action=delete&Id=<?php echo $item->Id ?>"
+                                     href="index.php?controller=sanpham&action=do_delete&Id=<?php echo $item->Id ?>"
                                      type="button" class="btn btn-danger">Delete</a>
                              </div>
                          </td>
