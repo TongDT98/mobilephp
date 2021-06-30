@@ -16,7 +16,7 @@ class SanPham
     {
         $list = [];
         $db = DB::getInstance();
-        $req = $db->query('SELECT * FROM SanPham');
+        $req = $db->query('SELECT * FROM SanPham ORDER BY Id DESC');
 
         foreach ($req->fetchAll() as $item) {
             $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham']);
@@ -28,13 +28,12 @@ class SanPham
     static function add()
     {
     }
-    static function do_add($data)
+    static function add_post($data)
     {
         try {
             $db = DB::getInstance();
-            $sql = 'INSERT INTO SanPham(Id, MaSanPham, TenSanPham) VALUES (SELECT MAX(Id) + 1 FROM SanPham, "' . $data->MaSanPham . '", "' . $data->TenSanPham . '")';
+            $sql = 'INSERT INTO SanPham(MaSanPham, TenSanPham) VALUES ("' . $data->MaSanPham . '", "' . $data->TenSanPham . '")';
             $db->exec($sql);
-
             return true;
         } catch (PDOException $e) {
             return false;

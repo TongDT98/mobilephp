@@ -5,15 +5,7 @@
     <div class="container-fluid flex-grow-1 container-p-y">
         <div class="card row mt-3">
             <div class="card-header col-md-12">
-                <div class="col-md-2">
-                    <button style="float: left;">
-                        <a style="font-size: 20px;" class="btn btn-outline-dark btn-sm pull-left"
-                            href="index.php?controller=sanpham&action=index">
-                            <i class="fas fa-arrow-alt-circle-left d-block"></i>
-                        </a>
-                    </button>
-                </div>
-                <div class="col-md-10" style="line-height: 30px; padding-left: 40px;">
+                <div class="col-md-10" style="line-height: 30px;">
                     <h2 class="" style="padding-left:40px; line-height: 27px; ">Thêm mới sản phẩm</h2>
                 </div>
             </div>
@@ -21,15 +13,8 @@
 
 
         <form action="index.php?controller=sanpham&action=add_post" method="POST" enctype="multipart/form-data">
-
-
-            <input type="hidden" name="DaDuyet">
-            <input type="hidden" name="DaXoa">
-            <input type="hidden" name="NguoiDungId">
-            <input type="hidden" name="AnhSanPham">
             <div class="form-horizontal">
                 <hr />
-
                 <div class="content mt-3">
                     <div class="animated fadeIn">
                         <div class="row">
@@ -43,9 +28,6 @@
                                         <!-- Credit Card -->
                                         <div id="pay-invoice">
                                             <div class="card-body">
-
-
-
                                                 <div class="row form-group">
                                                     <div class="col-md-3">
                                                         <label class="control-label mb-1 text-required">Tên sản
@@ -171,28 +153,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="content mt-3">
-                    <div class="animated fadeIn">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="form-group" style="text-align: center;">
-                                            <div class="col-md-offset-2 col-md-12">
-                                                <input type="submit" value="Thêm mới" id="Add"
-                                                    class="btn btn-primary" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- .card -->
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <a style="float:right; font-size: 20px;" class="btn btn-outline-dark btn-sm"
-                            href="index.php?controller=sanpham&action=index">
-                            <i class="fas fa-arrow-alt-circle-left d-block"></i>
-                        </a>
+                <div class="form-group" style="text-align: center;">
+                    <div class="col-md-offset-2 col-md-12">
+                        <input type="submit" value="Thêm mới" id="Add" class="btn btn-primary" />
                     </div>
                 </div>
             </div>

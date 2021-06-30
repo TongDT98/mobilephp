@@ -24,13 +24,12 @@ class SanPhamController extends BaseController
         $this->render('add');
     }
 
-    public function do_add()
+    public function add_post()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $item = new SanPham(0, $_POST["MaSanPham"], $_POST["TenSanPham"]);
-            SanPham::do_add($item);
-            header('Content-Type: application/json');
-            echo json_encode('Thành công');
+            SanPham::add_post($item);
+            header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=sanpham&action=index");
             exit;
         }
         header('Content-Type: application/json');
