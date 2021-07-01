@@ -1,4 +1,4 @@
-<div class="home pt-5" style="height: auto; background-color: #f3f6ff;">
+<div class="home p-5" style="height: auto; background-color: #f3f6ff;">
     <?php include 'views/layouts/shared/mainsliderstart.php'; ?>
 </div>
 <?php include 'views/layouts/shared/featurestart.php'; ?>

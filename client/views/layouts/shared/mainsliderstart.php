@@ -42,7 +42,7 @@
                            </div>
                        </div>
                        <div class="header-slider-item">
-                           <img src="/mobilephp/client/assets/img/product-12.jpg" alt="Slider Image" />
+                           <img src="/mobilephp/client/assets/img/product-11.jpg" alt="Slider Image" />
                            <div class="header-slider-caption">
                                <p>Some text goes here that describes the image</p>
                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
