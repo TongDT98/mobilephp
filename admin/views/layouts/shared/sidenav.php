@@ -41,15 +41,18 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="sidenav-item-link" href="index.html">
-                                            <span class="nav-text">Danh mục</span>
+                                        <a class="sidenav-item-link" href="index.php?controller=nhasanxuat&action=index">
+                                            <span class="nav-text">Nhà sản xuất</span>
                                         </a>
                                     </li>
-                                    <li class="section-title">
-                                        Quản lý người dùng
-                                    </li>
                                     <li>
-                                        <a class="sidenav-item-link" href="rtl.html">
+                                        <a class="sidenav-item-link" href="index.php?controller=loaisanpham&action=index">
+                                            <span class="nav-text"> Loại Sản Phẩm</span>
+                                        </a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="sidenav-item-link" href="index.php?controller=nguoidung&action=index">
                                             <span class="nav-text">Người dùng</span>
                                         </a>
                                     </li>
