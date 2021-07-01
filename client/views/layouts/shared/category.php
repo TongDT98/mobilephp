@@ -12,13 +12,13 @@
             </div>
             <div class="col-md-3">
                 <div class="category-item ch-250">
-                    <img src="/mobilephp/client/assets/img/category-4.jpg" />
+                    <img src="/mobilephp/uploads/600_galaxy.jpg" />
                     <a class="category-name" href="">
                         <p>Some text goes here that describes the image</p>
                     </a>
                 </div>
                 <div class="category-item ch-150">
-                    <img src="/mobilephp/client/assets/img/category-5.jpg" />
+                    <img src="/mobilephp/uploads/600_galaxy.jpg" />
                     <a class="category-name" href="">
                         <p>Some text goes here that describes the image</p>
                     </a>
@@ -26,13 +26,13 @@
             </div>
             <div class="col-md-3">
                 <div class="category-item ch-150">
-                    <img src="/mobilephp/client/assets/img/category-6.jpg" />
+                    <img src="/mobilephp/uploads/600_galaxy.jpg" />
                     <a class="category-name" href="">
                         <p>Some text goes here that describes the image</p>
                     </a>
                 </div>
                 <div class="category-item ch-250">
-                    <img src="/mobilephp/client/assets/img/category-7.jpg" />
+                    <img src="/mobilephp/uploads/600_galaxy.jpg" />
                     <a class="category-name" href="">
                         <p>Some text goes here that describes the image</p>
                     </a>
@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-3">
                 <div class="category-item ch-400">
-                    <img src="/mobilephp/client/assets/img/category-8.jpg" />
+                    <img src="/mobilephp/uploads/600_galaxy.jpg" />
                     <a class="category-name" href="">
                         <p>Some text goes here that describes the image</p>
                     </a>

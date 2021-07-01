@@ -6,9 +6,13 @@
             <!-- Product Image -->
             <div class="col-lg-6">
                 <div class="details_image">
-                    <div class="details_image_large"><img src=" uploads/<?= $SanPham->AnhSanPham ?>" alt=""><div class="product_extra product_new"><a href="categories.html">New</a></div></div>
+                    <div class="details_image_large">
+                    <img src=" ../uploads/<?= $SanPham->AnhSanPham ?>" >
+                    <div class="product_extra product_new">
+                        </div>
+                    </div>
                     <div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
-                        <div class="details_image_thumbnail active" data-image=" uploads/<?= $SanPham->AnhSanPham ?>"><img src=" uploads/<?= $SanPham->AnhSanPham ?>" alt=""></div>
+                        <div class="details_image_thumbnail active" data-image=" ../uploads/<?= $SanPham->AnhSanPham ?>"><img src=" ../uploads/<?= $SanPham->AnhSanPham ?>"></div>
                         <div class="details_image_thumbnail" data-image=" uploads/details_2.jpg"><img src=" uploads/details_2.jpg" alt=""></div>
                         <div class="details_image_thumbnail" data-image=" uploads/details_3.jpg"><img src=" uploads/details_3.jpg" alt=""></div>
                         <div class="details_image_thumbnail" data-image=" uploads/details_4.jpg"><img src=" uploads/details_4.jpg" alt=""></div>
@@ -20,7 +24,7 @@
                 <div class="details_content">
                     <div class="details_name"><?= $SanPham->TenSanPham ?></div>
                     <div class="details_discount"><?= $SanPham->Gia ?>đ</div>
-                    <div class="details_price"><?= $SanPham->Gia ?>đ</div>
+                    <div class="details_price"><?= $items->Gia ?>đ</div>
 
                     <!-- In Stock -->
                     <div class="in_stock_container">

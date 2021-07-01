@@ -1,4 +1,4 @@
-<?php require_once('sanpham.php'); ?>
+<?php require_once('../admin/models/model_sanpham.php'); ?>
 
 <?php
 class HoaDonChiTiet

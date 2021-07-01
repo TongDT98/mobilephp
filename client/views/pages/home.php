@@ -25,7 +25,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-1.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/600_galaxy.jpg" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-2.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/600_galaxy.jpg" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-3.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/600_galaxy.jpg" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-4.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/600_galaxy.jpg" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-5.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/600_galaxy.jpg" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>

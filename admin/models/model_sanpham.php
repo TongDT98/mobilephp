@@ -62,7 +62,7 @@ class SanPham
             $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'],$item['Gia'],
             $item['SoLuong'],$item['MoTa'],$item['AnhSanPham'],$item['MauSac'],$item['RAM'],
             $item['CPU'],$item['CameraTruoc'],$item['CameraSau'],$item['TheNho'],$item['HeDieuHanh'],$item['ManHinh'],
-            $item['DoPhanGiai'],$item['Pin'],$item['BaoHanh'],$item['NhaSanXuatId'],$item['LoaiSanPhamId'],
+            $item['DoPhanGiai'],$item['Pin'],$item['BaoHanh'],$item['NhaSanXuatId'],$item['LoaiSanPhamId']
             );
         }
 
@@ -132,5 +132,43 @@ class SanPham
            );
         }
         return null;
+    }
+    static function getByLTS($ltsid)
+    {
+      $list = [];
+      $db = DB::getInstance();
+      
+      $req = $db->prepare('SELECT * FROM SanPham WHERE PhanLoaiId = :ltsid');
+      $req->execute(array('ltsid' => $ltsid));
+      foreach ($req->fetchAll() as $item) {
+        $list[] = new SanPham($item['Id'], $item['TenSanPham'],$item['MaSanPham'],$item['MoTa'],
+        $item['Gia'], $item['SoLuong'],$item['AnhSanPham'],$item['MauSac'],
+        $item['Camera'], $item['RAM'],$item['HoTroTheNho'],$item['TheNho'],
+        $item['KetNoi'], $item['HeDieuHanhId'],$item['ManHinhId'],$item['KichThuoc'],
+        $item['TrongLuong'], $item['GiaiTriUngDung'],$item['ThongTinPin'],$item['BaoHanh'],
+        $item['DaDuyet'], $item['NhaSanXuatId'],$item['PhanLoaiId'],$item['NguoiDungId'],
+        $item['DaXoa'], $item['OrderNumber'],$item['TocDoCPU'],$item['ChipXuLy'],
+        $item['DoPhanGiai'], $item['DoRong'],$item['CongNgheManHinh']);
+      }
+      return $list;
+    }
+    static function getByq($q)
+    {
+      $list = [];
+      $db = DB::getInstance();
+      
+      $req = $db->prepare('SELECT * FROM SanPham WHERE TenSanPham like :q');
+      $req->execute(array('q' => '%'.$q.'%'));
+      foreach ($req->fetchAll() as $item) {
+        $list[] = new SanPham($item['Id'], $item['TenSanPham'],$item['MaSanPham'],$item['MoTa'],
+        $item['Gia'], $item['SoLuong'],$item['AnhSanPham'],$item['MauSac'],
+        $item['Camera'], $item['RAM'],$item['HoTroTheNho'],$item['TheNho'],
+        $item['KetNoi'], $item['HeDieuHanhId'],$item['ManHinhId'],$item['KichThuoc'],
+        $item['TrongLuong'], $item['GiaiTriUngDung'],$item['ThongTinPin'],$item['BaoHanh'],
+        $item['DaDuyet'], $item['NhaSanXuatId'],$item['PhanLoaiId'],$item['NguoiDungId'],
+        $item['DaXoa'], $item['OrderNumber'],$item['TocDoCPU'],$item['ChipXuLy'],
+        $item['DoPhanGiai'], $item['DoRong'],$item['CongNgheManHinh']);
+      }
+      return $list;
     }
 }

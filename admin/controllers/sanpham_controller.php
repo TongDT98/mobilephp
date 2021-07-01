@@ -2,7 +2,7 @@
 
 require_once('controllers/base_controller.php');
 require_once('models/model_sanpham.php');
-require_once('../appconfig/config.php');
+require_once('../fig.php');
 
 class SanPhamController extends BaseController
 {
@@ -71,7 +71,7 @@ class SanPhamController extends BaseController
             echo $file_name;
             $div =explode('.', $file_name);
             $file_ext = strtolower(end($div));
-            $unique_image = substr((time()), 0,10).'.'.$file_ext;      
+            $unique_image = substr(md5(time()), 0,10).'.'.$file_ext;     
             $uploaded_image = SITE_ROOT."/uploads/".$unique_image;
             move_uploaded_file($file_temp, $uploaded_image);
       
@@ -100,4 +100,5 @@ class SanPhamController extends BaseController
         header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=sanpham&action=index");
         exit;
     }
+    
 }

@@ -15,17 +15,17 @@ class HomeController extends BaseController
     $this->folder = 'home';
   }
 
-  public function loaitaisan()
-  {
-    $loaitaisanid =$_GET["Id"];
-    $items = SanPham::getByLTS($loaitaisanid);
-    $data = array('SanPhams' => $items);
-    $this->render('loaitaisan', $data);
-  }
+  // public function loaitaisan()
+  // {
+  //   $loaitaisanid =$_GET["Id"];
+  //   $items = SanPham::getByLTS($loaitaisanid);
+  //   $data = array('SanPhams' => $items);
+  //   $this->render('loaitaisan', $data);
+  // }
   public function product()
   {
     $id =$_GET["Id"];
-    $item = SanPham::find($id);
+    $item = SanPham1::find($id);
     $data = array('SanPham' => $item);
     $this->render('product', $data);
   }
@@ -35,7 +35,7 @@ class HomeController extends BaseController
     $Quantity =$_POST["Quantity"];
     if (!isset($_SESSION['cart_id'])) {
       $_SESSION['cart_id'] =  rand(1,1000000000);
-      $sp = SanPham::find($id);
+      $sp = SanPham1::find($id);
       $item = new cart($_SESSION['cart_id'],$Quantity,$id,$sp->Gia,$sp->AnhSanPham,$sp->TenSanPham);
       Cart::add($item);
     }
@@ -57,7 +57,7 @@ class HomeController extends BaseController
       }
       }
       
-      $sp = SanPham::find($id);
+      $sp = SanPham1::find($id);
       $item = new cart($_SESSION['cart_id'],$Quantity,$id,$sp->Gia,$sp->AnhSanPham,$sp->TenSanPham);
 
       Cart::add($item);

@@ -76,18 +76,7 @@
                                                             class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="row form-group">
-                                                                        <div class="col-md-3">
-                                                                            <label class="control-label mb-1">Ảnh</label>
-                                                                        </div>
-                                                                        <div class="col-md-9">
-                                                                            <input type="file" id="fileUpload" name="fileUpload"
-                                                                                   style="height: 45px" 
-                                                                                   class="form-control"><span id="error" style="color:red;"></span>
-                                                                            <img style="width:100%" id="img" /><span id="error" style="color:red;"></span>
-
-                                            </div>
-                                                                    </div>
+                                               
 
                                                 <div class="row form-group">
                                                     <div class="col-md-3">
@@ -128,10 +117,10 @@
                                                 </div>
                                                 <div class="row form-group">
                                                     <div class="col-md-3">
-                                                        <label class="control-label mb-1">Ram</label>
+                                                        <label class="control-label mb-1">RAM</label>
                                                     </div>
                                                     <div class="col-md-9">
-                                                        <input type="text" name="Ram" id="Ram"
+                                                        <input type="text" name="RAM" id="RAM"
                                                             class="form-control">
                                                     </div>
                                                 </div>
@@ -238,6 +227,28 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card-body">
+                                                                                            <!-- Credit Card -->
+                                                     <div id="pay-invoice">
+                                                                <div class="card-body">
+
+
+                                        <div class="row form-group">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label mb-1">Ảnh</label>
+                                                                        </div>
+                                                                        <div class="col-md-9">
+                                                                            <input type="file" id="fileUpload" name="fileUpload"
+                                                                                   style="height: 45px" 
+                                                                                   class="form-control"><span id="error" style="color:red;"></span>
+                                                                            <img style="width:100%" id="img" /><span id="error" style="color:red;"></span>
+
+                                            </div>
+                                                                    </div>
+
+                                    </div>
+                                                            </div>
+                                                        </div>
                                 </div>
                             </div>
                             <!-- .card -->
