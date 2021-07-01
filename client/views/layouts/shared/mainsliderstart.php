@@ -1,6 +1,6 @@
    <!-- Main Slider Start -->
    <div class="header">
-       <div class="container-fluid">
+       <div class="container-fluid p-0">
            <div class="row">
                <div class="col-md-3">
                    <nav class="navbar bg-light">

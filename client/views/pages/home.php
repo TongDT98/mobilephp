@@ -5,7 +5,7 @@
 <?php include 'views/layouts/shared/category.php'; ?>
 <?php include 'views/layouts/shared/calltoaction.php'; ?>
 <!-- Featured Product Start -->
-<div class="featured-product product w-100">
+<div class="featured-product product w-100 mb-0">
     <div class="container-fluid">
         <div class="section-header">
             <h1>Featured Product</h1>
@@ -151,6 +151,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-md-12 mt-5 text-center">
+            <button type="button" class="btn btn-secondary">Xem thêm</button>
         </div>
     </div>
 </div>
