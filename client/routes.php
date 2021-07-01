@@ -1,9 +1,9 @@
 <?php
 $controllers = array(
-  'pages' => ['home', 'error'],
-  'categories' => ['index', 'showCat'],
-  'loaisanpham' => ['index', 'showCat', 'add'],
-  'home' => ['index', 'showCat', 'add', 'loaitaisan', 'product', 'addtocart', 'cart', 'clearcart', 'checkout', 'search'],
+  'error' => ['error'],
+  'home' => ['index'],
+  'product' => ['index'],
+  'cart' => ['index'],
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.
 
 // Nếu các tham số nhận được từ URL không hợp lệ (không thuộc list controller và action có thể gọi
@@ -19,4 +19,3 @@ include_once('controllers/' . $controller . '_controller.php');
 $klass = str_replace('_', '', ucwords($controller, '_')) . 'Controller';
 $controller = new $klass;
 $controller->$action();
-?>
