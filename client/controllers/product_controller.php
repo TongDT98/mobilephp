@@ -1,5 +1,6 @@
 <?php
 require_once('controllers/base_controller.php');
+require_once('models/model_sanpham.php');
 
 class ProductController extends BaseController
 {
@@ -8,8 +9,10 @@ class ProductController extends BaseController
         $this->folder = 'product';
     }
 
-    public function productList()
+    public function index()
     {
-        $this->render('product_list');
+        $items = SanPham::all();
+        $data = array('items' => $items);
+        $this->render('index', $data);
     }
 }
