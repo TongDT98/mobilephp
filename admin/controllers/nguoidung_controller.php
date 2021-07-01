@@ -40,28 +40,27 @@ class NguoidungController extends BaseController
     $data = array();
     $this->render('add',$data,true);
   }
-  public function add_post()
+  public function do_add()
   {
     if ($_SERVER['REQUEST_METHOD']=== 'POST') {
         $item = new Nguoidung(0,$_POST["TenDangNhap"], $_POST["TenDayDu"], $_POST["Email"],$_POST["MatKhau"],$_POST["VaiTro"] );
         Nguoidung::add($item);
-        header('Content-Type: application/json');
-        echo json_encode('Thành công');
+        header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
         exit;
     }
-    header('Content-Type: application/json');
-    echo json_encode('Thất bại');
+    header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
     exit;
   }
-  public function delete()
+  public function do_delete()
   {
     if ($_SERVER['REQUEST_METHOD']=== 'GET') {
         $id =$_GET["Id"];
         Nguoidung::delete($id);
         
-        header("Location: index.php?controller=Nguoidung&action=index");
+        header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
+        exit;
     }
-    header("Location: index.php?controller=Nguoidung&action=index");
+    header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
     exit;
   }
   public function edit()
@@ -70,18 +69,16 @@ class NguoidungController extends BaseController
     $data = array('item' => $item);
     $this->render('edit', $data,true);
   }
-  public function edit_post()
+  public function do_edit()
   {
     if ($_SERVER['REQUEST_METHOD']=== 'POST') {
         $item = new Nguoidung($_POST["Id"],$_POST["TenDangNhap"], $_POST["TenDayDu"], $_POST["Email"],$_POST["DiaChi"],$_POST["MatKhau"],$_POST["VaiTro"] );
 
         Nguoidung::edit($item);
-        header('Content-Type: application/json');
-        echo json_encode('Thành công');
+        header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
         exit;
     }
-    header('Content-Type: application/json');
-    echo json_encode('Thất bại');
+    header("Location: http://localhost:8080/mobilephp/admin/index.php?controller=nguoidung&action=index");
     exit;
   }
 }

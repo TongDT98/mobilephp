@@ -24,7 +24,7 @@
     function ShowViewLoading(el) {
         $.ajax({
             type: "GET",
-            url: '/phpfinal/admin/shared/loading.php',
+            url: '/admin/shared/loading.php',
             success: function (data) {
                 $(el).html(data);
             },
