@@ -1,31 +1,15 @@
 <?php
+require_once('../appconfig/connection.php');
 
-if (session_status() == PHP_SESSION_NONE) {
-  session_start();
-}
-
-require_once('../system/connection.php');
-// if (!isset($_SESSION['LoginAdmin']) && $_GET['action']!= 'login') {
-// 	header("Location: login.php");
-
-// }
-if (!isset($_SESSION['LoginAdmin']) && $_GET['action']!= 'login') {
-	header("Location: login.php");
-}
-if (isset($_GET['controller'])) 
-{
+if (isset($_GET['controller'])) {
   $controller = $_GET['controller'];
   if (isset($_GET['action'])) {
     $action = $_GET['action'];
-  }
-   else {
+  } else {
     $action = 'index';
   }
-  
-} 
-else {
+} else {
   $controller = 'pages';
   $action = 'home';
 }
 require_once('routes.php');
-?>

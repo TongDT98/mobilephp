@@ -28,11 +28,11 @@
                          <td class="text-center" style="width: 100px;">
                              <div class="btn-group btn-group-sm">
                                  <a class="btn btn-primary"
-                                     href="index.php?controller=sanpham&action=edit&Id=<?php echo $item->Id ?>">Edit</a>
+                                     href="index.php?controller=sanpham&action=edit&Id=<?php echo $item->Id ?>">Sửa</a>
 
                                  <a onclick="return confirm('Bạn có muốn xóa?')"
                                      href="index.php?controller=sanpham&action=do_delete&Id=<?php echo $item->Id ?>"
-                                     type="button" class="btn btn-danger">Delete</a>
+                                     type="button" class="btn btn-danger">Xóa</a>
                              </div>
                          </td>
                      </tr>
