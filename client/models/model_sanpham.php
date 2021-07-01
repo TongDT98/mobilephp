@@ -7,14 +7,17 @@ class SanPham
   public $Id;
   public $MaSanPham;
   public $TenSanPham;
+  public $Gia;
   function __construct(
     $Id,
     $TenSanPham,
-    $MaSanPham
+    $MaSanPham,
+    $Gia
   ) {
     $this->Id = $Id;
     $this->TenSanPham = $TenSanPham;
     $this->MaSanPham = $MaSanPham;
+    $this->Gia = $Gia;
   }
 
   static function all()
@@ -24,7 +27,7 @@ class SanPham
     $req = $db->query('SELECT * FROM SanPham ORDER BY Id DESC');
 
     foreach ($req->fetchAll() as $item) {
-      $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham']);
+      $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia']);
     }
 
     return $list;
@@ -38,39 +41,7 @@ class SanPham
     $req->execute(array('id' => $id));
     $item = $req->fetch();
     if (isset($item['Id'])) {
-      return new SanPham(
-        $item['Id'],
-        $item['TenSanPham'],
-        $item['MaSanPham'],
-        $item['MoTa'],
-        $item['Gia'],
-        $item['SoLuong'],
-        $item['AnhSanPham'],
-        $item['MauSac'],
-        $item['Camera'],
-        $item['RAM'],
-        $item['HoTroTheNho'],
-        $item['TheNho'],
-        $item['KetNoi'],
-        $item['HeDieuHanhId'],
-        $item['ManHinhId'],
-        $item['KichThuoc'],
-        $item['TrongLuong'],
-        $item['GiaiTriUngDung'],
-        $item['ThongTinPin'],
-        $item['BaoHanh'],
-        $item['DaDuyet'],
-        $item['NhaSanXuatId'],
-        $item['PhanLoaiId'],
-        $item['NguoiDungId'],
-        $item['DaXoa'],
-        $item['OrderNumber'],
-        $item['TocDoCPU'],
-        $item['ChipXuLy'],
-        $item['DoPhanGiai'],
-        $item['DoRong'],
-        $item['CongNgheManHinh']
-      );
+      return new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia']);
     }
     return null;
   }
