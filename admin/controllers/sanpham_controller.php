@@ -71,7 +71,7 @@ class SanPhamController extends BaseController
             echo $file_name;
             $div =explode('.', $file_name);
             $file_ext = strtolower(end($div));
-            $unique_image = substr(md5(time()), 0,10).'.'.$file_ext;      
+            $unique_image = substr((time()), 0,10).'.'.$file_ext;      
             $uploaded_image = SITE_ROOT."/uploads/".$unique_image;
             move_uploaded_file($file_temp, $uploaded_image);
       
