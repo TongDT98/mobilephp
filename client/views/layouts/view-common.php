@@ -20,8 +20,8 @@ include 'shared/head.php';
                     <div class="row">
                         <div class="col p-0">
                             <?php
-							include 'shared/header.php';
-							?>
+                            include 'shared/header.php';
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ include 'shared/head.php';
         <?= @$content ?>
         <!-- Footer -->
         <?php
-		include 'shared/footer.php';
-		?>
+        include 'shared/footer.php';
+        ?>
         <!-- Back to Top -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
