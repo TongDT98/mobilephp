@@ -1,7 +1,6 @@
-<div class="home">
-    <?php include 'views/layouts/shared/mainslider.php'; ?>
+<div class="home pt-5">
+    <?php include 'views/layouts/shared/mainsliderstart.php'; ?>
 </div>
-<?php include 'views/layouts/shared/ads1.php'; ?>
 
 <div class="products">
     <div class="container">

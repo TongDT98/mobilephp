@@ -10,7 +10,7 @@ include 'shared/head.php';
 
 <body>
 
-    <div class="super_container">
+    <div class="super_container w-100">
 
         <!-- Header -->
 

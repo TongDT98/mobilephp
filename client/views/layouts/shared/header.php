@@ -43,7 +43,8 @@
                 </div>
                 <div class="navbar-nav ml-auto" style="display: block;">
                     <div class="nav-item dropdown pull-right">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                        <a href="#" class="nav-link dropdown-toggle pull-right" data-toggle="dropdown"
+                            style="float: right;">User Account</a>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">Login</a>
                             <a href="#" class="dropdown-item">Register</a>
@@ -57,23 +58,23 @@
 <!-- Nav Bar End -->
 
 <!-- Bottom Bar Start -->
-<div class="bottom-bar">
+<div class="bottom-bar" style="margin-bottom: 0;">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-3">
+            <div class="col-md-3 mb-0">
                 <div class="logo">
                     <a href="index.html">
                         ECO-MOBILE
                     </a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-0">
                 <div class="search">
                     <input type="text" placeholder="Search">
                     <button><i class="fa fa-search"></i></button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-0">
                 <div class="user">
                     <a href="wishlist.html" class="btn wishlist">
                         <i class="fa fa-heart"></i>
