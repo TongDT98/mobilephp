@@ -79,7 +79,7 @@
                         <i class="fa fa-heart"></i>
                         <span>(0)</span>
                     </a>
-                    <a href="cart.html" class="btn cart">
+                    <a href="index.php?controller=cart&action=index" class="btn cart">
                         <i class="fa fa-shopping-cart"></i>
                         <span>(0)</span>
                     </a>
