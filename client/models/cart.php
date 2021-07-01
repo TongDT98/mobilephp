@@ -2,20 +2,14 @@
 <?php
 class  Cart
 {
-  public $SessionId;
   public $SanPhamId;
   public $SoLuong;
   public $GiaBan;
-  public $AnhSanPham;
-  public $TenSanPham;
-  function __construct($SessionId, $SoLuong, $SanPhamId, $GiaBan, $AnhSanPham, $TenSanPham)
+  function __construct($SanPhamId, $SoLuong, $GiaBan)
   {
-    $this->SessionId = $SessionId;
     $this->SoLuong = $SoLuong;
     $this->SanPhamId = $SanPhamId;
     $this->GiaBan = $GiaBan;
-    $this->AnhSanPham = $AnhSanPham;
-    $this->TenSanPham = $TenSanPham;
 
   }
 
@@ -26,7 +20,7 @@ class  Cart
     $req = $db->query('SELECT * FROM  Cart');
 
     foreach ($req->fetchAll() as $item) {
-      $list[] = new  Cart($item['SessionId'], $item['SoLuong'],$item['SanPhamId'],$item['GiaBan'],$item['AnhSanPham'],$item['TenSanPham']);
+      $list[] = new  Cart( $item['SoLuong'],$item['SanPhamId'],$item['GiaBan']);
     }
 
     return $list;

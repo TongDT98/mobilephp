@@ -5,16 +5,19 @@ class SanPham
   public $MaSanPham;
   public $TenSanPham;
   public $Gia;
+  public $AnhSanPham;
   function __construct(
     $Id,
     $TenSanPham,
     $MaSanPham,
-    $Gia
+    $Gia,
+    $AnhSanPham
   ) {
     $this->Id = $Id;
     $this->TenSanPham = $TenSanPham;
     $this->MaSanPham = $MaSanPham;
     $this->Gia = $Gia;
+    $this->AnhSanPham = $AnhSanPham;
   }
 
   static function all()
@@ -24,7 +27,7 @@ class SanPham
     $req = $db->query('SELECT * FROM SanPham ORDER BY Id DESC');
 
     foreach ($req->fetchAll() as $item) {
-      $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia']);
+      $list[] = new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia'], $item['AnhSanPham'] );
     }
 
     return $list;
@@ -38,7 +41,7 @@ class SanPham
     $req->execute(array('id' => $id));
     $item = $req->fetch();
     if (isset($item['Id'])) {
-      return new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia']);
+      return new SanPham($item['Id'], $item['MaSanPham'], $item['TenSanPham'], $item['Gia'], $item['AnhSanPham'] );
     }
     return null;
   }

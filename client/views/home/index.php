@@ -18,7 +18,7 @@
             <div class="col-lg-3">
                 <div class="product-item">
                     <div class="product-title">
-                        <a href="#"><?php echo $item->TenSanPham ?></a>
+                        <a href="#"><?php echo $item->MaSanPham ?> - <?php echo $item->TenSanPham ?></a>
                         <div class="ratting">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="product-image">
                         <a href="product-detail.html">
-                            <img src="/mobilephp/client/assets/img/product-11.jpg" alt="Product Image">
+                            <img src="/mobilephp/uploads/<?php echo $item->AnhSanPham ?>" alt="Product Image">
                         </a>
                         <div class="product-action">
                             <a href="#"><i class="fa fa-cart-plus"></i></a>

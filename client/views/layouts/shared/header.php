@@ -62,7 +62,7 @@
         <div class="row align-items-center">
             <div class="col-md-3 mb-0">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php?controller=home&action=index">
                         ECO-MOBILE
                     </a>
                 </div>

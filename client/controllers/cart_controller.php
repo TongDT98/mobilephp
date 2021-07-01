@@ -12,7 +12,7 @@ class CartController extends BaseController
     {
         $id = $_POST["SanPhamId"];
         $sp = SanPham::find($id);
-        $item = new Cart(0, 1, $sp->Id, $sp->Gia);
+        $item = new Cart( $sp->Id,1, $sp->Gia);
         Cart::add($item);
         header('Content-Type: application/json');
         echo json_encode('Thành công');
