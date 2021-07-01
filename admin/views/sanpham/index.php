@@ -13,6 +13,7 @@
                  <thead>
                      <tr>
                          <th>Id</th>
+                         <th>Anh</th>
                          <th>Mã sản phẩm</th>
                          <th>Tên sản phẩm</th>
                          <th>Giá </th>
@@ -29,6 +30,7 @@
                         foreach ($items as $item) {   ?>
                      <tr class="odd gradeX">
                          <td><?php echo $item->Id ?></td>
+                         <td><img src="../uploads/<?php echo $item->AnhSanPham ?>"  width="150" height="150"></td>
                          <td><?php echo $item->MaSanPham ?></td>
                          <td><?php echo $item->TenSanPham ?></td>
                          <td><?php echo $item->Gia ?></td>

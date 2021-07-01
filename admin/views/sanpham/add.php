@@ -3,7 +3,36 @@
 
     <!-- Content -->
     <div class="container-fluid flex-grow-1 container-p-y">
-    
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#fileUpload").change(function() {
+                    readURL(this);
+                });
+                var a = new AutoNumeric('#Gia', {
+                    currencySymbol: "đ ",
+                    decimalCharacter: ",",
+                    digitGroupSeparator: ".",
+                    unformatOnSubmit: true
+
+                });
+
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#img').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                } else {
+                    $('#img').attr('src', "");
+                }
+
+            }
+        </script>
         <div class="card row mt-3">
             <div class="card-header col-md-12">
                 <div class="col-md-10" style="line-height: 30px;">
@@ -47,6 +76,18 @@
                                                             class="form-control">
                                                     </div>
                                                 </div>
+                                                <div class="row form-group">
+                                                                        <div class="col-md-3">
+                                                                            <label class="control-label mb-1">Ảnh</label>
+                                                                        </div>
+                                                                        <div class="col-md-9">
+                                                                            <input type="file" id="fileUpload" name="fileUpload"
+                                                                                   style="height: 45px" 
+                                                                                   class="form-control"><span id="error" style="color:red;"></span>
+                                                                            <img style="width:100%" id="img" /><span id="error" style="color:red;"></span>
+
+                                            </div>
+                                                                    </div>
 
                                                 <div class="row form-group">
                                                     <div class="col-md-3">

@@ -94,7 +94,7 @@ class HomeController extends BaseController
         $soTien = 0;
         foreach ($items as $item){
           $soTien =$soTien+ ($item->SoLuong * $item->GiaBan);
-          $hoadonchitiet = new HoaDonChiTiet($hdId, $item->SoLuong, $item->SanPhamId, $item->GiaBan);
+          $hoadonchitiet = new HoaDonChiTiet($item->hdId, $item->SoLuong, $item->SanPhamId, $item->GiaBan);
           HoaDonChiTiet::add($hoadonchitiet);
         }
         $hd = new HoaDon(0,$soTien,null,$khId);
