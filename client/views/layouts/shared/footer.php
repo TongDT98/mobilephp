@@ -55,15 +55,15 @@
              <div class="col-md-6">
                  <div class="payment-method">
                      <h2>We Accept:</h2>
-                     <img src="img/payment-method.png" alt="Payment Method" />
+                     <img src="/mobilephp/client/assets/img/payment-method.png" alt="Payment Method" />
                  </div>
              </div>
              <div class="col-md-6">
                  <div class="payment-security">
                      <h2>Secured By:</h2>
-                     <img src="img/godaddy.svg" alt="Payment Security" />
-                     <img src="img/norton.svg" alt="Payment Security" />
-                     <img src="img/ssl.svg" alt="Payment Security" />
+                     <img src="/mobilephp/client/assets/img/godaddy.svg" alt="Payment Security" />
+                     <img src="/mobilephp/client/assets/img/norton.svg" alt="Payment Security" />
+                     <img src="/mobilephp/client/assets/img/ssl.svg" alt="Payment Security" />
                  </div>
              </div>
          </div>
@@ -72,15 +72,12 @@
  <!-- Footer End -->
 
  <!-- Footer Bottom Start -->
- <div class="footer-bottom">
+ <div class="footer-bottom" style="background-color: rgba(0, 0, 0, 0.2);">
      <div class="container">
          <div class="row">
-             <div class="col-md-6 copyright">
-                 <p>Copyright &copy; <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved</p>
-             </div>
-
-             <div class="col-md-6 template-by">
-                 <p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+             <div class="col-md-12 copyright text-center">
+                 © 2021 Copyright:
+                 <a class="text-dark" href="#">Eco-Mobile</a>
              </div>
          </div>
      </div>

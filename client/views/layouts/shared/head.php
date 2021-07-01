@@ -1,5 +1,5 @@
 <head>
-    <title>Sublime</title>
+    <title>Eco-mobile</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sublime project">
@@ -57,5 +57,36 @@
         position: absolute;
         top: 0;
     }
+
+    /*css scroll*/
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #F2F3F3;
+        border-radius: 2.5px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 0px;
+        background-color: #0888b1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 5px;
+        border-radius: 2.5px;
+        background-color: #0888b1;
+    }
+
+    .layout-wrapper.layout-2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .paginate_button.page-item.previous .page-link,
+    .paginate_button.page-item.next .page-link {
+        height: 25px !important;
+    }
+
+    /*end*/
     </style>
 </head>
