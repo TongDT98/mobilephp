@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="index.php?controller=home&action=product" class="nav-item nav-link">Products</a>
+                    <a href="index.php?controller=product&action=index" class="nav-item nav-link">Products</a>
                     <a href="cart.html" class="nav-item nav-link">Cart</a>
                     <a href="checkout.html" class="nav-item nav-link">Checkout</a>
                     <a href="my-account.html" class="nav-item nav-link">My Account</a>

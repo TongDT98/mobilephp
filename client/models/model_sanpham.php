@@ -1,6 +1,3 @@
-<?php require_once('loaisanpham.php'); ?>
-<?php require_once('nhasanxuat.php'); ?>
-
 <?php
 class SanPham
 {
